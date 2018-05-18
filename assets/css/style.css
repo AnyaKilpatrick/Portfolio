@@ -1,0 +1,147 @@
+html {
+    position:relative;
+    min-height: 100vh;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+/* *{
+    box-sizing: border-box;
+} */
+body {
+    background: #dddddd;
+    color: #777777;
+    font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+    margin-bottom: 100px;
+}
+
+h1, h3 {
+    font-family: "Georgia", Times, "Times New Roman", serif;
+}
+
+/* Header */
+
+.whiteFont {
+    color: #ffffff;
+}
+
+.white {
+    background: #ffffff;
+}
+
+.blue {
+    background: #4aaaa5;
+    min-height:100%;
+    min-width: 100%;
+}
+
+myHeader {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* Navbar */
+.myNav {
+    color: #cccccc;
+
+}
+
+.middleNav {
+    border-left:1px solid #cccccc;
+    border-right:1px solid #cccccc;
+}
+
+.myNav:hover {
+    background: #4aaaa5;
+    color: #ffff;
+    border-radius: 100px;
+}
+/* Article */
+.photo {
+    width:200px;
+}
+
+.myHeading {
+    border-bottom: 2px solid #cccccc;
+    font-size: 26px;
+    color: #4aaaa5;
+}
+
+article {
+    margin-bottom: 20px;
+}
+/* Sidebar */
+
+.icon:hover  {
+    border-radius: 100px;
+  }
+
+aside {
+    max-height: 150px;
+}
+
+.icon {
+    max-width: 70px;
+    max-height:70px;
+}
+
+/* Footer */
+.myFooter {
+    position: absolute;
+    bottom: 0%;
+    background: #777777;
+    color: white;
+    border-top: 8px solid #4aaaa5;
+}
+
+/*  Portfolio */
+.portfText {
+    background: #4aaaa5;
+    color: #ffffff;
+    position: relative;
+    bottom:70px;
+}
+
+/* Form  */
+
+.myButton:hover {
+    border-radius: 100px;
+}
+
+.myButton {
+    background: #4aaaa5;
+    color: #ffffff;
+    border-radius: 0;
+    border: none;
+}
+
+/* Media Queries for Responsive Photo */
+
+@media screen and (max-width: 992px) {
+   .photo {
+       width: 100%;
+   }
+   
+}
+@media screen and (max-width: 768px) {
+   .photo {
+       width: 100vw;
+    }
+    .middleNav {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+@media screen and (max-width: 576px) {
+   .photo {
+       width: 100%;
+   }
+   .middleNav {
+       padding-left: 30px;
+       padding-right: 30px;
+
+   }
+  
+}
+
