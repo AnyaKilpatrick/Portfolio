@@ -10,68 +10,75 @@ html {
     box-sizing: border-box;
 } */
 body {
-    background: #dddddd;
+    background:#e4e2e2;
     color: #777777;
     font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
     margin-bottom: 100px;
 }
-
-h1, h3 {
-    font-family: "Georgia", Times, "Times New Roman", serif;
+#firstParallax{
+    height:65px;
 }
-
-/* Header */
-
-.whiteFont {
-    color: #ffffff;
+/* #parallax2{
+    background:rgba(57, 100, 102, 0.685);
+} */
+#transpNav{
+    background:#173539cb;
 }
-
-.white {
-    background: #ffffff;
+#aboutMe, #techSk, #portf{
+    font-family:'Love Ya Like A Sister', cursive;
+    color:#212121;
 }
-
-.blue {
-    background: #4aaaa5;
-    min-height:100%;
-    min-width: 100%;
+#aboutMeDiv, #aboutSkills, #aboutExperience{
+    margin-top:5px;
+    margin-bottom: 10px;
+    background: #e4e2e2;
+    padding-top:20px;
+    color: #212121;
+    font-size: 20px;
 }
-
-myHeader {
-    padding-left: 10%;
-    padding-right: 10%;
+.aboutMeSpans{
+    font-family:'Love Ya Like A Sister';
+    color:#496d77;
+    font-size:25px;
 }
-
-/* Navbar */
-.myNav {
-    color: #cccccc;
-
+.googlefont1 {
+    /* font-family: 'Gloria Hallelujah', cursive; */
+    font-family: 'Love Ya Like A Sister', cursive;
 }
-
-.middleNav {
-    border-left:1px solid #cccccc;
-    border-right:1px solid #cccccc;
+nav {
+    position: fixed;
+    top:0%;
 }
-
-.myNav:hover {
-    background: #4aaaa5;
-    color: #ffff;
-    border-radius: 100px;
+.navlinks {
+    font-size: 20px;
+    color: #c1bdbf;
+}
+h4 {
+    color: #c1bdbf;
+}
+.parallax-container {
+    height: 150px;
+}
+li{
+    color:black;
+    font-size:22px;
+}
+h5 {
+    margin-top:30px;
+    font-family: 'Love Ya Like A Sister', cursive;
 }
 /* Article */
 .photo {
-    width:200px;
+    margin-top: 35px;
+    max-width:350px;
+    border-radius: 10px;
 }
-
-.myHeading {
-    border-bottom: 2px solid #cccccc;
-    font-size: 26px;
-    color: #4aaaa5;
+#photo2 {
+    margin-top: 35px;
+    width:400px;
+    border-radius: 10px;
 }
-
-article {
-    margin-bottom: 20px;
-}
-/* Sidebar */
+/* Sidebar
 
 .icon:hover  {
     border-radius: 100px;
@@ -84,7 +91,7 @@ aside {
 .icon {
     max-width: 70px;
     max-height:70px;
-}
+} */
 
 /* Footer */
 .myFooter {
@@ -93,14 +100,6 @@ aside {
     background: #777777;
     color: white;
     border-top: 8px solid #4aaaa5;
-}
-
-/*  Portfolio */
-.portfText {
-    background: #4aaaa5;
-    color: #ffffff;
-    position: relative;
-    bottom:70px;
 }
 
 /* Form  */

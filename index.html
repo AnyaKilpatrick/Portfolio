@@ -5,85 +5,182 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <link rel="reset stylesheet" type="text/css" href="assets/css/reset.css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Love+Ya+Like+A+Sister" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Portfolio</title>
 </head>
 <body>
+        <div class="parallax-container" id="firstParallax">
+                <div class="parallax"><img src="assets/images/parallax1.jpg"></div>
+        </div>
     <!-- Header -->
-    <div class="container-fluid pr-0 pl-0 white">
-        <div class="container pr-0 pl-0">
-            <div class="row justify-content-between">
-                <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12 col-xs-12 text-center">
-                    <h1 CLASS="blue mb-0 whiteFont">Hanna Kilpatrick</h1>
+    <nav class="z-depth-5" id="transpNav">
+        <div class="nav-wrapper googlefont1">
+          <a class="left"><h4>Anya Kilpatrick</h4></a>
+          <ul id="nav-mobile" class="right">
+            <li><a class="navlinks" href="index.html">About</a></li>
+            <li><a class="navlinks" href="portfolio.html">Portfolio</a></li>
+            <li><a class="navlinks" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+    </nav>
+    <br><br>
+    <!-- Main Content -->
+    <!-- <div class="parallax-container">
+        <div class="parallax"><img src="assets/images/parallax-back.jpg"></div>
+    </div> -->
+    <div class="addMargin" id="aboutMeDiv">
+        <div class="row">
+            <article class="col s12">
+                <!-- Creating a container inside of this column so the top row border will be not full width -->
+                <!-- <div>
+                    <div class="row center">
+                        <h3 class="col m12">About Me</h3>
+                    </div>
+                </div> -->
+                <!-- Floating img to the left -->
+                <div class="col s3 center-align">
+                    <img class="photo z-depth-5" src="assets/images/anyaphoto1.jpg" alt="Hanna K.">
                 </div>
-                <ul class="col-xl-3 col-lg-4 col-md-5 col-sm-12 col-xs-12 justify-content-around nav pt-2">
-                    <li class="nav-item">
-                      <a class="nav-link myNav pt-0 pb-0" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link myNav middleNav pt-0 pb-0" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link myNav pt-0 pb-0" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+                <div class="col s9">
+                    <div class="row center">
+                        <h3 class="col 12" id="aboutMe">About Anya</h3>
+                    </div>
+                    <div class="col s12">
+                        <p>
+                        Hanna Kilpatrick, known by her Ukrainian name Anya, is a <span class="aboutMeSpans">Full Stack Web Developer</span>, with experience of working as a Freelance Author and Director’s Assistant in Ukraine and as a Starbucks Team Lead in the United States. 
+                        </p>
+                        <p>
+                        These made her <span class="aboutMeSpans">proactive in troubleshooting and problem-solving</span> both independently and in a teamwork setting. Being <span class="aboutMeSpans">in love with both Front End and Back End</span>, Anya is looking forward to the opportunity to build sophisticated applications with a creative team, working for a fast paced and growing company.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    <!-- <div class="parallax-container">
+        <div class="parallax center" id="parallax2">
+            <h5>
+                Anya is spending almost all her spare time learning new technologies, frameworks and meeting new people from the tech world.
+            </h5>
+        </div>
+    </div> -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="assets/images/parallax1.jpg">
+        </div>
+    </div>
+    <div id="aboutSkills">
+        <div class="row">
+            <div class="col offset-s1 s6">
+                <h3 id="techSk">Anya's Technical Skills:</h3>
+                <div class="row">
+                    <div class="col s4">
+                        <table class="striped">
+                            <tbody>           
+                                <tr><td>HTML5, CSS, JavaScript</td></tr>
+                                <tr><td>Bootstrap, Materialize</td></tr>
+                                <tr><td>GIT, Github, GitKraken</td></tr>
+                                <tr><td>jQuery</td></tr>
+                                <tr><td>Node.js</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col s4">
+                        <table class="striped">
+                            <tbody>           
+                                <tr><td>Express.js</td></tr>
+                                <tr><td>MySQL, Firebase</td></tr>
+                                <tr><td>APIs, JSON, AJAX</td></tr>
+                                <tr><td>Passport</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col s3 left-align">
+                <img id="photo2" src="assets/images/anyaphoto2.jpg">
             </div>
         </div>
     </div>
-    <br><br>
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row justify-content-between">
-        <article class="col-xl-8 col-lg-7 col-md-6 col-sm-12 col-xs-12 white text-justify">
-            <!-- Creating a container inside of this column so the top row border will be not full width -->
-            <div class="container">
-                <div class="row">
-                    <h3 class="col-md-12 pl-0 pt-3 pb-3 myHeading">About Me</h3>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="assets/images/parallax1.jpg">
+        </div>
+    </div>
+    <div id="aboutExperience">
+        <div class="row">
+            <div class="col s4">
+                <h3 id="portf">Portfolio</h3>
+                <img class="photo" src="assets/images/success2.png">
+            </div>
+            <div class="col s6">
+                <div class="card">
+                    <div class="card-tabs">
+                        <ul class="tabs tabs-fixed-width">
+                        <li class="tab"><a href="#test4">SpeakIT</a></li>
+                        <li class="tab"><a class="active" href="#test5">Test 2</a></li>
+                        <li class="tab"><a href="#test6">Test 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-content grey lighten-4">
+                        <div id="test4">
+                            <p><span class="aboutMeSpans">SpeakIT</span> - social web app, that helps users, who are studying or willing to study a foreign language, connect and practice with other users that are fluent in it.</p>
+                            <p><span class="aboutMeSpans">Languages/Tools</span>: Node.js, Express, JavaScript, jQuery, MySQL, Sequelize, Handlebars, Passport, Socket.io</p>
+                            <p><span class="aboutMeSpans">GitHub</span>: <a href="https://github.com/AnyaKilpatrick/SpeakIT" target="_blank">https://github.com/AnyaKilpatrick/SpeakIT</a></p> 
+                            <p><span class="aboutMeSpans">Deployed app</span>: <a href="https://speak-it.herokuapp.com/" target="_blank">https://speak-it.herokuapp.com</a></p> 
+                        </div>
+                        <div id="test5">Test 2</div>
+                        <div id="test6">Test 3</div>
+                    </div>
                 </div>
             </div>
-            <!-- Floating img to the left -->
-            <img class="img-fluid float-left mr-3 mb-3 photo" src="assets/images/image.jpg" alt="Hanna K.">
-            <p>
-                My name is Hanna Kilpatrick, but I go by Anya.  I’m from Ukraine, and I moved to the United States in 2016.  I have a bachelors in Philology, the study of languages.  When I moved to America, I realized that I needed to start my career from the ground up, and that’s when I discovered the Full Stack Web Development Program at University of Richmond.  I had no experience in programming, but my love for creativity and creating things told me that this was exactly what I wanted to do.  
-            </p>
-            <p>         
-                The classes started in January, and I continue to learn new things every day.  I’m excited to keep progressing in this field, and I’m eager to make a career out of it.
-            </p>
-        </article>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="assets/images/parallax-back.jpg"></div>
+    </div>
+    <div class="grey lighten-1 z-depth-5">
+        <div class="row">
+            djdjdj djjee  ejej
+        </div>
+    </div>
         <!-- Sidebar -->
-        <aside class="col-xl-3 col-lg-4 col-md-5 col-sm-12 col-xs-12 white mb-3">
+        <!-- <aside class="col l3 l4 m5 s12 xs12"> -->
             <!-- Creating a container inside of this column so the top row border will be not full width -->
-            <div class="container">
+            <!-- <div>
                 <div class="row text-center">
-                    <h3 class="col-md-12 pt-3 pb-3 pr-0 pl-0 myHeading">Connect With Me</h3>
+                    <h3 class="col m12">Connect With Me</h3>
                 </div>
             </div>
-            <div class="row Mysidebar">
-                <div class="col-4 text-center">
+            <div class="row">
+                <div class="col s4">
                     <a href="https://github.com/AnyaKilpatrick" target="_blank">
-                        <img class="icon mb-3" src="assets/images/github.png" alt="github">
+                        <img class="icon" src="assets/images/github.png" alt="github">
                     </a>
                 </div>
-                <div class="col-4 text-center">
+                <div class="col s4 text-center">
                     <a href="https://www.linkedin.com/in/hanna-kilpatrick-5a6b7914b/" target="_blank">
-                        <img class="icon mb-3" src="assets/images/linkedin.png" alt="linkedin">
+                        <img class="icon" src="assets/images/linkedin.png" alt="linkedin">
                     </a>
                 </div>
-                <div class="col-4 text-center">
+                <div class="col s4 text-center">
                     <a href="https://www.facebook.com/profile.php?id=100006234904807&ref=bookmarks" target="_blank">
-                        <img class="icon mb-3" src="assets/images/facebook.png" alt="facebook">
+                        <img class="icon" src="assets/images/facebook.png" alt="facebook">
                     </a>
                 </div>
             </div>
         </aside>
     </div>
-    </div>
+    </div> -->
     <!-- Sticky footer -->
-    <div class="container-fluid text-center pt-3 pb-3 myFooter">
+    <div class="col s12 container-fluid text-center pt-3 pb-3 myFooter">
         <p>Ⓒ Copyright 2016 Hanna Kilpatrick</p>
     </div>
 
-
+<script src="assets/js/app.js"></script>
 </body>
 </html>
